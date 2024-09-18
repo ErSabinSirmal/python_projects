@@ -4,3 +4,4 @@ class Student:
         self.s_roll = roll
 s1 = Student("sabin", 392)
 print(s1.s_name)
+import heros
