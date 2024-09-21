@@ -11,7 +11,7 @@ for turtles in range (0,6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.color(colors[turtles])
     new_turtle.penup()
-    new_turtle.goto(x=-240, y = y_positions[turtles])
+    new_turtle.goto(x=0, y = y_positions[turtles])
     all_turtles.append(new_turtle)
 if user_bet:
     is_race_on = True
@@ -20,7 +20,7 @@ while is_race_on:
     for turtle in all_turtles:
         if turtle.xcor() > 220:
             is_race_on = False
-            winning_color = turtle.pencolor()
+            winning_color = turtle.pencolor() #pencolor() returns the color of the turtle
             if winning_color == user_bet:
                 print(f"you've won! The {winning_color} turtle is the winner!")
             else:
