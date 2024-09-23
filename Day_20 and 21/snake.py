@@ -42,6 +42,14 @@ class Snake:
         self.head.forward(MOVE_DISTANCE)
         # self.segments[0].left(90)
 
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear() # cear the all segments that added
+        self.create_snake()
+        self.head = self.segments[0]
+
   #method that used to move the turtle ....
     def up(self):
         if self.head.heading() != DOWN: #this is the condition that is used to restrict the turtle to

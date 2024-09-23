@@ -14,7 +14,7 @@ class CarManager():
 
 
     def create_car(self):
-        random_chance = random.randint(1,6)
+        random_chance = random.randint(1,6) #This random number is used to generate the less car
         if random_chance == 1:
             new_car = Turtle()
             new_car.setheading(180)

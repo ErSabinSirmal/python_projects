@@ -32,7 +32,7 @@ while game_is_on:
              player.game_over()
 
 
-    # Detect the Player has reached teh other side
+    # Detect the Player has reached the other side
     if player.is_at_finish_line():
         # player.update_level()
         # print(f"hello {player.ycor()}")

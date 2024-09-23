@@ -6,7 +6,6 @@ from turtle import Turtle
 class Player(Turtle):
     def __init__(self):
         super().__init__()
-        self.level = 1
         self.shape("turtle")
         self.penup()
         self.setheading(90)
