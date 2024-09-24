@@ -5,10 +5,8 @@
 # file.close()
 
 #to not use the close() method
-
-with open("mero_file.txt") as file:
+# Absolute path
+with open("C:/Users/T U F/Desktop/mero_file.txt") as file:
     contents = file.read()
     print(contents)
 
-with open("new_file.txt", mode = "w") as file:
-    file.write("\nNew text")
