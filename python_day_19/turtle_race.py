@@ -11,7 +11,7 @@ for turtles in range (0,6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.color(colors[turtles])
     new_turtle.penup()
-    new_turtle.goto(x=0, y = y_positions[turtles])
+    new_turtle.goto(x=-240, y = y_positions[turtles])
     all_turtles.append(new_turtle)
 if user_bet:
     is_race_on = True
