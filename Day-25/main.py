@@ -1,21 +1,23 @@
-# # with open("weather_data.csv") as data:
-# #     weather_report = data.readlines()
-# # print("List of name is: ")
-# # print(weather_report)
+# with open("weather_data.csv") as data:
+#     weather_report = data.readlines()
+# print("List of name is: ")
+# print(weather_report)
+# for row in weather_report:
+#     print(row)
 #
-#
-# # We can import csv to print the list in the readable format
-#
-# # import csv
 # #
-# # with open("weather_data.csv") as data_files:
-# #     data = csv.reader(data_files)
-# #     temperature = []
-# #     for row in data:
-# #         if row[1] != "temp":
-# #             temperature.append(int(row[1]))
-# #     print(temperature)
+# # # We can import csv to print the list in the readable format
 #
+# import csv
+#
+# with open("weather_data.csv") as data_files:
+#     data = csv.reader(data_files)
+#     temperature = []
+#     for row in data:
+#         if row[1] != "temp":
+#             temperature.append(int(row[1]))
+#     print(temperature)
+
 #     # for item in temperature[1:]:
 #     #     tempr = int(item)
 #     #     print(tempr)
@@ -23,16 +25,17 @@
 # import pandas
 #
 # data = pandas.read_csv("weather_data.csv")
-# # print(data["temp"])
+# print(type(data["condition"]))
+
 #  # dataframe conversion
 # # print((data["temp"]))
-# # data_dict = data.to_dict()
-# # print(data_dict)
-# #
-# # temp_list = data["temp"].to_list()
-# # print(len(temp_list))
-# # print(temp_list)
-# #
+# data_dict = data.to_dict()
+# print(data_dict)
+# # #
+# temp_list = data["temp"].to_list()
+# print(len(temp_list))
+# print(temp_list)
+# # #
 # # # average_tempr = sum(temp_list) / len(temp_list)
 # # # print(average_tempr)
 # #
@@ -40,21 +43,23 @@
 # # print(data["temp"].max())
 # #
 # # # Get Data in columns
-# # print(data["condition"])
-# # print(data.condition)
+# print(data["condition"])
+# print(data.condition)
 #
 # #get data in Row
 #
-# # print(data[data.day == "Monday"])
-# # maximum = data.temp.max()
-# # print(data[data.temp == maximum])
+# print(data[data.day == "Monday"])
+# maximum = data.temp.max()
+# print(data[data.temp == maximum])
 #
-# # tuesday = data[data.day == "Tuesday"]
-# # print(tuesday.condition)
+# tuesday = data[data.day == "Tuesday"]
+# print(tuesday.condition)
 #
-# # tempreture = data[data.day == "Monday"]
-# # temp_fahrenheit = (tempreture.temp * 9/5) + 32
-# # print(temp_fahrenheit)
+# tempreture = data[data.day == "Monday"]
+# print(tempreture)
+# print(tempreture.temp)
+# temp_fahrenheit = (tempreture.temp * 9/5) + 32
+# print(temp_fahrenheit)
 #
 # # create a dataframe from scratch
 #
@@ -67,7 +72,10 @@
 # print(my_data)
 #
 # #converting the dataframe to the csv file
-# my_data.to_csv("new_data.csv")
+# my_data.to_csv("new_data1.csv")
+
+
+
 # squirrel census data analysis...
 
 import pandas as pd
@@ -87,8 +95,9 @@ data_dict = {
 }
 
 my_squirrels = pd.DataFrame(data_dict)
-# print(my_squirrels)
+print(my_squirrels)
 my_squirrels.to_csv("squirrel_count.csv")
+print(my_squirrels["Count"].to_list())
 
 
 

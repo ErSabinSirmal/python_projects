@@ -1,5 +1,4 @@
 import turtle
-from importlib.machinery import all_suffixes
 
 import pandas
 
